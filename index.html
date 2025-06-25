@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2go.by</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; /* Распределяем пространство между плитками */
+            flex-wrap: nowrap; /* Плитки не могут смещаться вниз */
+            width: 60%; /* Ширина контейнера 60% */
+            margin: 0 auto; /* Центруем контейнер */
+        }
+        .tile {
+            flex: 0 0 20%; /* Каждая плитка занимает 30% ширины контейнера */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0; /* Убираем боковые отступы */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .tile img {
+            width: 100%; /* Картинка занимает всю ширину плитки */
+            border-radius: 10px 10px 0 0; /* Закругляем верхние углы картинки */
+        }
+        .tile:hover {
+            transform: scale(1.05);
+        }
+        .tile a {
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        .tile a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добро пожаловать на 2go.by</h1>
+    <div class="container">
+        <div class="tile">
+            <img src="images/den.jpg" alt="Изображение 1">
+            <h2>Первая плитка</h2>
+            <p>Переход на поддомен.</p>
+            <a href="https://den.2go.by" target="_blank">Перейти к Den</a>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/300" alt="Изображение 2">
+            <h2>Вторая плитка</h2>
+            <p>Информация о втором пункте.</p>
+            <a href="#">Ссылка</a>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/300" alt="Изображение 3">
+            <h2>Третья плитка</h2>
+            <p>Информация о третьем пункте.</p>
+            <a href="#">Ссылка</a>
+        </div>
+    </div>
+
+</body>
+</html>
