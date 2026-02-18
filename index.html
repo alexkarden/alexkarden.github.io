@@ -3,79 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>2go.by</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between; /* Распределяем пространство между плитками */
-            flex-wrap: nowrap; /* Плитки не могут смещаться вниз */
-            width: 60%; /* Ширина контейнера 60% */
-            margin: 0 auto; /* Центруем контейнер */
-        }
-        .tile {
-            flex: 0 0 20%; /* Каждая плитка занимает 30% ширины контейнера */
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            margin: 10px 0; /* Убираем боковые отступы */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .tile img {
-            width: 100%; /* Картинка занимает всю ширину плитки */
-            border-radius: 10px 10px 0 0; /* Закругляем верхние углы картинки */
-        }
-        .tile:hover {
-            transform: scale(1.05);
-        }
-        .tile a {
-            display: block;
-            color: #007BFF;
-            text-decoration: none;
-            font-size: 18px;
-            margin-top: 15px;
-        }
-        .tile a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="preload" as="font" href="fonts/Gilroy-ExtraBold.woff2"  type="font/woff2" crossorigin="crossorigin">
 </head>
 <body>
+<!--
+<div class="container-menu">
+    <div class="container-menu-inside">
+        <a href="https://github.com/alexkarden/telegram_bot_7745.by_promocode" class="text-link">
+            <h3 class="text-gilroy">Портфолио</h3>
+        </a>
+    </div>
+    <div class="container-menu-inside">
+        <a href="https://github.com/alexkarden/telegram_bot_7745.by_promocode" class="text-link">
+            <h3 class="text-gilroy">Контакты</h3>
+        </a>
+    </div>
+</div>
+-->
+<div class="banner">
+<img src="images/tiny.jpg" alt="Пример картинки">
+    <div class="text-overlay-yellow">ПОРТФОЛИО</div>
+    <div class="text-overlay-grey">Бэкенд-разработка асинхронных приложений и микросервисов на Python. <br><br>
+        Работа с SQL и NoSQL базами данных, Redis. Знание Docker. <br><br>
+        Обеспечение безопасности приложений и данных пользователей.<br><br>
+        Участие в проектах в области электронной коммерции.<br><br>
+        <a href="tel:+375297047262" class="contact-link" >Кардовский Алексей</a><br>
+    <a href="tel:+375297047262"class="contact-link" >+375 29 704-72-62 </a><br>
+        <a href="https://t.me/alexkarden"class="contact-link" >Telegram</a><br>
+            <a href="mailto:7047262@gmail.com" class="contact-link">7047262@gmail.com</a></div>
 
-    <h1>Добро пожаловать на 2go.by</h1>
+
+</div>
+
+<div class="container-mobile">
+<div class="text-yellow">ПОРТФОЛИО</div>
+<div class="text-grey">Бэкенд-разработка асинхронных приложений и микросервисов на Python. <br><br>
+        Работа с SQL и NoSQL базами данных, Redis. Знание Docker. <br><br>
+        Обеспечение безопасности приложений и данных пользователей.<br><br>
+        Участие в проектах в области электронной коммерции.<br><br>
+        <a href="tel:+375297047262" class="contact-link" >Кардовский Алексей</a><br>
+    <a href="tel:+375297047262"class="contact-link" >+375 29 704-72-62 </a><br>
+        <a href="https://t.me/alexkarden"class="contact-link" >Telegram</a><br>
+            <a href="mailto:7047262@gmail.com" class="contact-link">7047262@gmail.com</a></div>
+</div>
+
+
+
+
+
     <div class="container">
-        <div class="tile">
-            <img src="images/den.jpg" alt="Изображение 1">
-            <h2>Первая плитка</h2>
-            <p>Переход на поддомен.</p>
-            <a href="https://den.2go.by" target="_blank">Перейти к Den</a>
+                <div class="box">
+            <img src="images/img07_1200.jpg" alt="TG бот - уведомления о снижении цен на товары" class="my-image">
+            <h3 class="text-gilroy">TG бот - уведомления о снижении цен на товары</h3>
+            <p class="text-stack">Скрипт, периодически парсит сайты и записывает актуальные цены в базу PostgreSQL. Сравнивает цены и рыссылает уведомления пользователям в случае изменения цены. Есть возможность задавать порог цены,
+                объединять товары в пулы. Импорт истории цен в файл exel. Графическое представление истории цен. Подключен Redis для ускорения работы бота. Скрипт выполняется в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, APScheduler, requests, beautifulsoup4, matplotlib, pandas, asyncpg, redis, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-autoparts" class="text-link">Сcылка на проект TG бот - уведомления о снижении цен на товары на GitHub (проект представлен частично)</a>
+
+
         </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/300" alt="Изображение 2">
-            <h2>Вторая плитка</h2>
-            <p>Информация о втором пункте.</p>
-            <a href="#">Ссылка</a>
+
+
+        <div class="box">
+            <img src="images/img06_1200.jpg" alt="TG бот - складская программа с уведомленими о заказах с Emall" class="my-image">
+            <h3 class="text-gilroy">TG бот - складская программа с уведомленими о заказах с Emall</h3>
+            <p class="text-stack">Скрипт уведомляет складских рабочих о новом заказе с Emall, что позволяет оперативно комплектовать посылки. База SQLite. Авторизация и управления пользователями. Настройки уведомлений. Скрипт выполняется в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, APScheduler, requests, aiosqlite, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-EMALL.BY-sqlite-aiogram3" class="text-link">Сcылка на проект TG бот - складская программа с уведомленими о заказах с Emall на GitHub (проект представлен частично)</a>
+
+
         </div>
-        <div class="tile">
-            <img src="https://via.placeholder.com/300" alt="Изображение 3">
-            <h2>Третья плитка</h2>
-            <p>Информация о третьем пункте.</p>
-            <a href="#">Ссылка</a>
+
+        <div class="box">
+            <img src="images/img08_1200.jpg" alt="TG боты - складские программы с уведомленими о заказах с Deal и Onliner" class="my-image">
+            <h3 class="text-gilroy">TG боты - складские программы с уведомленими о заказах с Deal и Onliner</h3>
+            <p class="text-stack"> Скрипты уведомляют складских рабочих о новых заказах с Deal и Onliner, что позволяет оперативно комплектовать посылки. Базы MySQL и PostgreSQL. Скрипты выполняются в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, APScheduler, requests, aiomysql, asyncpg, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-onliner.by-postgresql-aiogram3" class="text-link">Сcылка на проект TG бот - складская программа с уведомленими о заказах с Onliner на GitHub</a>
+            <br>
+            <a href="https://github.com/alexkarden/telegram-bot-deal.by-mysql-aiogram3" class="text-link">Сcылка на проект TG бот - складская программа с уведомленими о заказах с Deal на GitHub</a>
+
         </div>
+
+
+        <div class="box">
+            <img src="images/img05_1200.jpg" alt="TG боты - генерация текста и изображений с помощью ИИ" class="my-image">
+            <h3 class="text-gilroy">TG боты - генерация текста и изображений с помощью ИИ</h3>
+            <p class="text-stack">Скрипты работают с Open-source AI pollinations. Скрипты выполняются в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram,  Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-text-AI-generator" class="text-link">Сcылка на проект AI текстового генератора на GitHub</a>
+            <br>
+            <a href="https://github.com/alexkarden/telegram-bot-image-AI-generator" class="text-link">Сcылка на проект AI генератора изображений на GitHub</a>
+
+        </div>
+        <div class="box">
+            <img src="images/img03_1200.jpg" alt="TG бот - отправка книг на читалку Kindle" class="my-image">
+            <h3 class="text-gilroy">TG бот - отправка книг на читалку Kindle</h3>
+            <p class="text-stack">Скрипт, работающий по расписанию, заходит на сайт 7745.by и парсит промокоды. Затем он сравнивает найденные промокоды с уже сохраненными в базе данных SQLite. В случае обнаружения новых промокодов скрипт отправляет уведомление пользователю в Telegram. Скрипт выполняется в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, requests, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-sending-books-on-kindle" class="text-link">Сcылка на проект на GitHub</a>
+
+        </div>
+
+        <div class="box">
+            <img src="images/img04_1200.jpg" alt="TG бот - игровой движок для кекстовых квестов и интерактивной литературы" class="my-image">
+            <h3 class="text-gilroy">TG бот - игровой движок для кекстовых квестов и интерактивной литературы</h3>
+            <p class="text-stack">Игровой движок для текстовых квестов и интерактивной литературы. Игры формата URQ можно подключать просто забросив в каталог. Скрипт выполняется в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, aiosqlite, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-text-quest-aiogram3" class="text-link">Сcылка на проект на GitHub</a>
+            <br>
+            <a href="https://t.me/KazBot_QuestEngine_bot" class="text-link">Открыть Telegram-бота</a>
+        </div>
+
+        <div class="box">
+                     <img src="images/img02_1200.jpg" alt="TG бот - получение промокодов 7745.by" class="my-image">
+            <h3 class="text-gilroy">TG бот - получение промокодов 7745.by</h3>
+            <p class="text-stack">Скрипт, работающий по расписанию, заходит на сайт 7745.by и парсит промокоды. Затем он сравнивает найденные промокоды с уже сохраненными в базе данных SQLite. В случае обнаружения новых промокодов скрипт отправляет уведомление пользователю в Telegram. Скрипт выполняется в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, APScheduler, requests, beautifulsoup4, aiosqlite, Docker </p>
+            <a href="https://github.com/alexkarden/telegram_bot_7745.by_promocode" class="text-link">Сcылка на проект на GitHub</a>
+            <br>
+            <a href="https://t.me/KazBot_promo_7745_bot" class="text-link">Открыть Telegram-бота</a>
+        </div>
+        <div class="box">
+                     <img src="images/img01_1200.jpg" alt="TG бот - получение получение актуальных курсов валют с НБРБ" class="my-image">
+            <h3 class="text-gilroy">TG боты - получение получение актуальных курсов валют с НБРБ и TG бот конвертер валюты за границей</h3>
+            <p class="text-stack">Скрипт для поолучения актуальных курсов валют с НБРБ, работающий по расписанию, получает по API курсы всех валют с сайта НБРБ. Сохраняет в базу данных и в зависимости от настроек отправляет уведомление пользователю в Telegram. TG бот конвертер валюты за границей по запросу конвертирует валюту по актуальному курсу с НБРБ. Скрипты выполняются в контейнере Docker на сервере Linux, с удаленным управлением через SSH.</p>
+            <p class="text-ptsans">Python 3.12, asyncio, aiogram, APScheduler, requests, aiosqlite, Docker </p>
+            <a href="https://github.com/alexkarden/telegram-bot-NBRB.BY-sqlite-aiogram3" class="text-link">Сcылка на проект на GitHub</a>
+            <br>
+            <a href="https://t.me/KazBot_nbrb_bot" class="text-link">Открыть Telegram-бота</a>
+            <br>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 
+    <footer class="footer">
 </body>
-</html>
